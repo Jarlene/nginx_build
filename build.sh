@@ -14,8 +14,6 @@ cd ..
 wget https://ftp.pcre.org/pub/pcre/pcre-8.00.tar.bz2 -O pcre.tar.bz2
 tar -xvf pcre.tar.bz2
 
-wget http://www.zlib.net/zlib-1.2.11.tar.gz -O zlib.tar.gz
-tar -xvf zlib.tar.gz
 
 wget https://www.openssl.org/source/openssl-1.1.1-pre1.tar.gz -O openssl.tar.gz
 tar -xvf openssl.tar.gz
