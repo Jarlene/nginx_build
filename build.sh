@@ -34,7 +34,6 @@ cd nginx-1.13.9
             --with-http_v2_module \
             --with-stream \
             --with-pcre=../pcre-8.00 \
-            --with-zlib=../zlib-1.2.11 \
             --with-openssl=../openssl-1.1.1-pre1 \
             --add-module=../lua-nginx-module \
             --add-module=../stream-lua-nginx-module \
