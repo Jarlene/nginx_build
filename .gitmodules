@@ -1,0 +1,18 @@
+[submodule "nginx/lua"]
+	path = nginx/lua
+	url = https://github.com/Jarlene/ngxin_lua_server.git
+[submodule "ngx_devel_kit"]
+	path = ngx_devel_kit
+	url = https://github.com/simplresty/ngx_devel_kit.git
+[submodule "nginx-sticky-module"]
+	path = nginx-sticky-module
+	url = https://github.com/michaelneale/nginx-sticky-module.git
+[submodule "stream-lua-nginx-module"]
+	path = stream-lua-nginx-module
+	url = https://github.com/openresty/stream-lua-nginx-module.git
+[submodule "lua-nginx-module"]
+	path = lua-nginx-module
+	url = https://github.com/openresty/lua-nginx-module.git
+[submodule "nginx-rtmp-module"]
+	path = nginx-rtmp-module
+	url = https://github.com/arut/nginx-rtmp-module.git
