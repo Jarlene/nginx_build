@@ -6,10 +6,11 @@ wget http://luajit.org/download/LuaJIT-2.0.5.tar.gz -O LuaJIT.tar.gz
 tar zxf LuaJIT.tar.gz
 
 cd LuaJIT-2.0.5
-make PREFIX=/usr/local/luajit
-make install PREFIX=/usr/local/luajit
+make PREFIX=../nginx/luajit
+make install PREFIX=../nginx/luajit
 cd ..
 
+export LD_LIBRARY_PATH=../nginx/luajit/lib:../nginx/lualib:$LIBRARY_PATH
 
 wget https://ftp.pcre.org/pub/pcre/pcre-8.00.tar.bz2 -O pcre.tar.bz2
 tar -xvf pcre.tar.bz2
