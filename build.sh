@@ -32,13 +32,18 @@ cd nginx-1.13.9
             --with-http_realip_module \
             --with-http_sub_module \
             --with-http_v2_module \
+            --with-ipv6 \
+            --with-http_flv_module \
             --with-stream \
+            --with-ld-opt="-Wl,-rpath,/usr/local/luajit/lib" \
             --with-pcre=../pcre-8.00 \
+             --with-pcre-jit \
             --with-openssl=../openssl-1.1.1-pre1 \
             --add-module=../lua-nginx-module \
             --add-module=../stream-lua-nginx-module \
             --add-module=../nginx-rtmp-module \
-            --add-module=../ngx_devel_kit
+            --add-module=../ngx_devel_kit \
+            --add-module==../nginx-sticky-module
 
 make
 make install
