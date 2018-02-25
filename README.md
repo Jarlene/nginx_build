@@ -1,3 +1,3 @@
 # nginx_build
 
-build nginx shell with some module
+using shell build nginx with some module
