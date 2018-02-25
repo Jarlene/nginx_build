@@ -7,6 +7,8 @@ if [ ! -n "$path" ] ;then
 fi
 git submodule update --init --recursive
 
+cp -r ./nginx/lua ${path}/nginx/lua
+
 wget http://luajit.org/download/LuaJIT-2.0.5.tar.gz -O LuaJIT.tar.gz
 tar zxf LuaJIT.tar.gz
 
@@ -21,9 +23,12 @@ export LUAJIT_INC=${path}/nginx/luajit/include//luajit-2.0/
 wget https://ftp.pcre.org/pub/pcre/pcre-8.00.tar.bz2 -O pcre.tar.bz2
 tar -xvf pcre.tar.bz2
 
+wget https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz -O nginx-sticky-module.tar.gz
+tar -zxvf nginx-sticky-module.tar.gz
 
 wget https://www.openssl.org/source/openssl-1.1.1-pre1.tar.gz -O openssl.tar.gz
 tar -xvf openssl.tar.gz
+mv nginx-goodies-nginx-sticky-module-ng-08a395c66e42  nginx-sticky-module
 
 wget http://nginx.org/download/nginx-1.13.9.tar.gz -O nginx.tar.gz
 tar -xvf nginx.tar.gz
