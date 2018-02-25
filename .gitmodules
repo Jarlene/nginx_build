@@ -6,7 +6,7 @@
 	url = https://github.com/simplresty/ngx_devel_kit.git
 [submodule "nginx-sticky-module"]
 	path = nginx-sticky-module
-	url = https://github.com/michaelneale/nginx-sticky-module.git
+	url = https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng.git
 [submodule "stream-lua-nginx-module"]
 	path = stream-lua-nginx-module
 	url = https://github.com/openresty/stream-lua-nginx-module.git
