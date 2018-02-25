@@ -7,7 +7,7 @@ if [ ! -n "$path" ] ;then
 fi
 git submodule update --init --recursive
 
-cp -r ./nginx/lua ${path}/nginx/lua
+cp -r ./nginx  ${path}/nginx/
 
 wget http://luajit.org/download/LuaJIT-2.0.5.tar.gz -O LuaJIT.tar.gz
 tar zxf LuaJIT.tar.gz
