@@ -19,7 +19,7 @@ make install PREFIX=${path}nginx/luajit
 cd ..
 
 export LUAJIT_LIB=${path}nginx/luajit/lib
-export LUAJIT_INC=${path}nginx/luajit/include//luajit-2.0/
+export LUAJIT_INC=${path}nginx/luajit/include/luajit-2.0/
 if [[ ! -f "pcre.tar.bz2" ]]; then
     wget https://ftp.pcre.org/pub/pcre/pcre-8.00.tar.bz2 -O pcre.tar.bz2
 fi
