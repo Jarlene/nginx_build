@@ -6,6 +6,11 @@ if [ ! -n "$path" ] ;then
      exit 1
 fi
 git submodule update --init --recursive
+git pull
+cd ./nginx/lua
+git checkout master
+cd ../..
+git submodule foreach git pull
 
 cp -r ./nginx  ${path}nginx
 if [[ ! -f "LuaJIT.tar.gz"  ]]; then
