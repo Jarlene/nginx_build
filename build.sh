@@ -9,6 +9,7 @@ git submodule update --init --recursive
 git pull
 cd ./nginx/lua
 git checkout master
+git pull
 cd ../..
 git submodule foreach git pull
 
