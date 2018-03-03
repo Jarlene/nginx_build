@@ -54,13 +54,13 @@ cd nginx-1.13.9
             --with-ipv6 \
             --with-http_flv_module \
             --with-stream \
-            --with-pcre=../pcre-8.00 \
-            --with-openssl=../openssl-1.1.1-pre1 \
-            --add-module=../lua-nginx-module \
-            --add-module=../stream-lua-nginx-module \
-            --add-module=../nginx-rtmp-module \
-            --add-module=../ngx_devel_kit \
-            --add-module=../nginx-sticky-module
+            --with-pcre=${path}pcre-8.00 \
+            --with-openssl=${path}openssl-1.1.1-pre1 \
+            --add-module=${path}lua-nginx-module \
+            --add-module=${path}stream-lua-nginx-module \
+            --add-module=${path}nginx-rtmp-module \
+            --add-module=${path}ngx_devel_kit \
+            --add-module=${path}nginx-sticky-module
 
 make
 make install
