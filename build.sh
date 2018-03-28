@@ -20,12 +20,12 @@ if [[ ! -f "LuaJIT.tar.gz"  ]]; then
 fi
 tar zxf LuaJIT.tar.gz
 cd LuaJIT-2.0.5
-make PREFIX=${path}nginx/luajit
-make install PREFIX=${path}nginx/luajit
+make PREFIX=/usr/local/luajit
+make install PREFIX=/usr/local/luajit
 cd ..
 
-export LUAJIT_LIB=${path}nginx/luajit/lib
-export LUAJIT_INC=${path}nginx/luajit/include/luajit-2.0/
+export LUAJIT_LIB=/usr/local/luajit/lib
+export LUAJIT_INC=/usr/local/luajit/include/luajit-2.0/
 if [[ ! -f "pcre.tar.bz2" ]]; then
     wget https://ftp.pcre.org/pub/pcre/pcre-8.00.tar.bz2 -O pcre.tar.bz2
 fi
@@ -36,7 +36,7 @@ fi
 tar -zxvf nginx-sticky-module.tar.gz
 
 if [[ ! -f "openssl.tar.gz" ]]; then
-    wget https://www.openssl.org/source/openssl-1.1.1-pre1.tar.gz -O openssl.tar.gz
+    wget https://www.openssl.org/source/openssl-1.1.1-pre3.tar.gz -O openssl.tar.gz
 fi
 
 tar -xvf openssl.tar.gz
@@ -61,13 +61,12 @@ cd nginx-1.13.9
             --with-http_flv_module \
             --with-stream \
             --with-pcre=../pcre-8.00 \
-            --with-openssl=../openssl-1.1.1-pre1 \
+            --with-openssl=../openssl-1.1.1-pre3 \
             --add-module=../lua-nginx-module \
             --add-module=../stream-lua-nginx-module \
             --add-module=../nginx-rtmp-module \
             --add-module=../ngx_devel_kit \
-            --add-module=../nginx-sticky-module \
-            --add-module=../nginx-audio-track-for-hls-module \
+            --add-module=../nginx-sticky-module
 
 make
 make install

@@ -13,6 +13,3 @@
 [submodule "nginx-rtmp-module"]
 	path = nginx-rtmp-module
 	url = https://github.com/arut/nginx-rtmp-module.git
-[submodule "nginx-audio-track-for-hls-module"]
-	path = nginx-audio-track-for-hls-module
-	url = https://github.com/flavioribeiro/nginx-audio-track-for-hls-module.git
