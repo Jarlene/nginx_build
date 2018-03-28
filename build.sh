@@ -66,7 +66,8 @@ cd nginx-1.13.9
             --add-module=../stream-lua-nginx-module \
             --add-module=../nginx-rtmp-module \
             --add-module=../ngx_devel_kit \
-            --add-module=../nginx-sticky-module
+            --add-module=../nginx-sticky-module \
+            --add-module=../nginx-audio-track-for-hls-module \
 
 make
 make install
