@@ -60,6 +60,7 @@ cd nginx-1.13.9
             --with-ipv6 \
             --with-http_flv_module \
             --with-stream \
+            --with-threads \
             --with-pcre=../pcre-8.00 \
             --with-openssl=../openssl-1.1.1-pre3 \
             --add-module=../lua-nginx-module \
