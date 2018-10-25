@@ -62,7 +62,7 @@ cd nginx-1.13.9
             --with-stream \
             --with-threads \
             --with-pcre=../pcre-8.00 \
-            --with-openssl=../openssl-1.1.1-pre3 \
+            --with-openssl=../openssl-1.1.1 \
             --add-module=../lua-nginx-module \
             --add-module=../stream-lua-nginx-module \
             --add-module=../nginx-rtmp-module \
