@@ -36,7 +36,7 @@ fi
 tar -zxvf nginx-sticky-module.tar.gz
 
 if [[ ! -f "openssl.tar.gz" ]]; then
-    wget https://www.openssl.org/source/openssl-1.1.1-pre3.tar.gz -O openssl.tar.gz
+    wget https://www.openssl.org/source/openssl-1.1.1.tar.gz -O openssl.tar.gz
 fi
 
 tar -xvf openssl.tar.gz
